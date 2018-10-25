@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>DOM event Test</h1>
+<section>
+    <p>Example of Toggle</p>
+<button onclick="togleFunc()">Click Me</button>
+
+<div id="togle">
+ Thank you for click
+</div>
+</section>
+<section>
+            <p>Example of drag and drop</p>
+            <p>Drag the Sun to it home:</p>
+
+            <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br>
+            <img id="drag" src="img/sun.png" draggable="true" ondragstart="drag(event)" width="150" height="70">
+         
+        </section>
+
+            <section>
+                
+            <button type="button" onclick="changePos()">Change possition for img</button>
+        
+        </section>
+    <script src="index.js"></script>
+</body>
+</html>
